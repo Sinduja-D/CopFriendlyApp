@@ -1,0 +1,73 @@
+.complaints-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.complaints-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+.no-complaints {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.complaints-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.complaint-card {
+  transition: transform 0.3s;
+}
+
+.complaint-card:hover {
+  transform: translateY(-3px);
+}
+
+.complaint-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.status-badge {
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.complaint-description {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.complaint-details {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-bottom: 1.5rem;
+}
+
+.complaint-details p {
+  margin: 0.25rem 0;
+}
+
+.complaint-actions {
+  display: flex;
+  gap: 1rem;
+}

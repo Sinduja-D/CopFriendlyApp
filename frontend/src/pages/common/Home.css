@@ -1,0 +1,55 @@
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #3498db, #2c3e50);
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.cta-buttons a {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.feature {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.feature h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,76 @@
+.sos-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.sos-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+.no-alerts {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.alerts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.alert-card {
+  transition: transform 0.3s;
+}
+
+.alert-card:hover {
+  transform: translateY(-3px);
+}
+
+.alert-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.status-badge {
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.status-badge.active {
+  background-color: #e74c3c;
+}
+
+.status-badge.responding {
+  background-color: #f39c12;
+}
+
+.alert-details {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-bottom: 1.5rem;
+}
+
+.alert-details p {
+  margin: 0.25rem 0;
+}
+
+.alert-actions {
+  display: flex;
+  gap: 1rem;
+}

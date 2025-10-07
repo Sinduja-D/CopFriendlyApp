@@ -1,0 +1,88 @@
+.analytics-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.analytics-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+.analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.stat-card h3 {
+  color: #7f8c8d;
+  margin-bottom: 0.5rem;
+}
+
+.stat-value {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #3498db;
+  margin: 0;
+}
+
+.chart-card {
+  padding: 2rem;
+}
+
+.chart-card h3 {
+  margin-top: 0;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.hotspots-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hotspot-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hotspot-name {
+  min-width: 120px;
+  font-weight: bold;
+}
+
+.hotspot-bar {
+  flex-grow: 1;
+  height: 20px;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.hotspot-fill {
+  height: 100%;
+  background-color: #3498db;
+  border-radius: 10px;
+}
+
+.hotspot-count {
+  min-width: 80px;
+  text-align: right;
+  color: #7f8c8d;
+}
