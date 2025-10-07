@@ -14,28 +14,35 @@ import ComplaintManagement from './pages/police/ComplaintManagement';
 import SOSAlerts from './pages/police/SOSAlerts';
 import CaseUpdate from './pages/police/CaseUpdate';
 import AnalyticsDashboard from './pages/police/AnalyticsDashboard';
+import Layout from './Layout';
 
 const router = createBrowserRouter([
-  { path: '/', element: <Home /> },
-  { path: '/about', element: <About /> },
-  
-  // Citizen Routes
-  { path: '/citizen/login', element: <CitizenLogin /> },
-  { path: '/citizen/dashboard', element: <CitizenDashboard /> },
-  { path: '/citizen/report', element: <ReportCrime /> },
-  { path: '/citizen/sos', element: <EmergencySOS /> },
-  { path: '/citizen/status', element: <ComplaintStatus /> },
-  { path: '/citizen/profile', element: <CitizenProfile /> },
-  
-  // Police Routes
-  { path: '/police/login', element: <PoliceLogin /> },
-  { path: '/police/dashboard', element: <PoliceDashboard /> },
-  { path: '/police/complaints', element: <ComplaintManagement /> },
-  { path: '/police/sos', element: <SOSAlerts /> },
-  { path: '/police/case-update', element: <CaseUpdate /> },
-  { path: '/police/analytics', element: <AnalyticsDashboard /> },
-  
-  { path: '*', element: <NotFound /> }
+  {
+    path: '/',
+    element: <Layout />,
+    children: [
+      { index: true, element: <Home /> },
+      { path: 'about', element: <About /> },
+
+      // Citizen Routes
+      { path: 'citizen/login', element: <CitizenLogin /> },
+      { path: 'citizen/dashboard', element: <CitizenDashboard /> },
+      { path: 'citizen/report', element: <ReportCrime /> },
+      { path: 'citizen/sos', element: <EmergencySOS /> },
+      { path: 'citizen/status', element: <ComplaintStatus /> },
+      { path: 'citizen/profile', element: <CitizenProfile /> },
+
+      // Police Routes
+      { path: 'police/login', element: <PoliceLogin /> },
+      { path: 'police/dashboard', element: <PoliceDashboard /> },
+      { path: 'police/complaints', element: <ComplaintManagement /> },
+      { path: 'police/sos', element: <SOSAlerts /> },
+      { path: 'police/case-update', element: <CaseUpdate /> },
+      { path: 'police/analytics', element: <AnalyticsDashboard /> },
+
+      { path: '*', element: <NotFound /> }
+    ]
+  }
 ]);
 
 export default router;
