@@ -1,0 +1,35 @@
+/* frontend/src/index.css */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Custom styles */
+.MuiCard-root {
+  margin-bottom: 16px;
+}
+
+.map-container {
+  height: 400px;
+  width: 100%;
+}
+
+.sos-button {
+  background-color: #f44336 !important;
+  color: white !important;
+  padding: 16px !important;
+  font-size: 1.2rem !important;
+}
+
+.sos-button:hover {
+  background-color: #d32f2f !important;
+}

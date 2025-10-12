@@ -1,0 +1,47 @@
+{
+  "citizens": [
+    {
+      "id": 1,
+      "email": "citizen@example.com",
+      "password": "password123",
+      "name": "John Doe",
+      "phone": "1234567890"
+    }
+  ],
+  "police": [
+    {
+      "id": 1,
+      "badge": "P123",
+      "password": "police123",
+      "name": "Officer Smith"
+    }
+  ],
+  "complaints": [
+    {
+      "id": 1,
+      "citizenId": 1,
+      "description": "Stolen bicycle",
+      "category": "Theft",
+      "status": "Pending",
+      "location": "Park Avenue",
+      "date": "2023-05-15"
+    }
+  ],
+  "sos": [
+    {
+      "id": 1,
+      "citizenId": 1,
+      "location": { "lat": 40.7128, "lng": -74.0060 },
+      "status": "Active",
+      "timestamp": "2023-05-20T12:30:00Z"
+    }
+  ],
+  "analytics": {
+    "totalCases": 42,
+    "responseTime": "8.2 minutes",
+    "crimeHotspots": [
+      { "area": "Downtown", "incidents": 15 },
+      { "area": "Riverside", "incidents": 8 }
+    ]
+  }
+}
